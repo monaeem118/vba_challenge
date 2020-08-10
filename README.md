@@ -19,13 +19,9 @@ Looking at the above stock results, Steve can advise his parents to diversify th
 
 ### Analysis of Execution Times between Original and Re-factored Script
 
-Original script took 0.56 and 0.55 seconds for executing 2017 and 2018 sheets respectively as shown in the below snapshots:
+Original script took approximately 0.54 seconds for executing both 2017 and 2018 sheets.
 
-![](resources/2017_original_script_exec_time.png)
-
-![](resources/2018_original_script_exec_time.png)
-
- The execution times of re-factored script improved significantly. It took approximately 0.14 seconds to process both 2017 and 2018 datasets as shown in the below snapshots:
+The execution times of re-factored script improved significantly. It took approximately 0.14 seconds to process both 2017 and 2018 datasets as shown in the below snapshots:
 
  ![](resources/VBA_Challenge_2017.png)
 
