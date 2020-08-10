@@ -59,8 +59,6 @@ Sub AllStocksAnalysisRefactored()
     Next j
     
 
-    
-
 
     '2b) loop over all the rows
         tickerIndex = 0
@@ -94,7 +92,6 @@ Sub AllStocksAnalysisRefactored()
             End If
     
         Next Row
-    'Next tickerIndex
         
     
     '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
@@ -111,8 +108,6 @@ Sub AllStocksAnalysisRefactored()
     'Formatting
     Worksheets("All Stocks Analysis").Activate
     Range("A3:C3").Font.FontStyle = "Bold"
-    Range("A1").Font.FontStyle = "Bold"
-    Range("A1").Font.Size = 14
     Range("A3:C3").Borders(xlEdgeBottom).LineStyle = xlContinuous
     Range("B4:B15").NumberFormat = "#,##0"
     Range("C4:C15").NumberFormat = "0.0%"
@@ -140,6 +135,7 @@ Sub AllStocksAnalysisRefactored()
 
 End Sub
 
+'Subroutine to clear worksheet
 Sub ClearWorksheet()
 
     Cells.Clear

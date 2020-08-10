@@ -21,8 +21,17 @@ Looking at the above stock results, Steve can advise his parents to diversify th
 
 Original script took 0.56 and 0.55 seconds for executing 2017 and 2018 sheets respectively as shown in the below snapshots:
 
+![](resources/2017_original_script_exec_time.png)
 
+![](resources/2018_original_script_exec_time.png)
 
+ The execution times of re-factored script improved significantly. It took approximately 0.14 seconds to process both 2017 and 2018 datasets as shown in the below snapshots:
 
- The execution times of re-factored script improved significantly. It took 
+ ![](resources/VBA_Challenge_2017.png)
+
+ ![](resources/VBA_Challenge_2018.png)
+
+### Analysis of Original and Re-factored Scripts
+
+In the original script we had two nested For loops, one to loop over the tickers and the other to loop over rows in the sheet. The For loop to iterate over rows had to go over 12 times for the entire rows because of this outer loop to iterate over tickers as shown in the following code block:
 
